@@ -1,6 +1,20 @@
+/*--------- 
+      font size 
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+/*---------- 
+        main body 
+------------*/
 body{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
+h1{
+    font-weight: 700;
+}
+/*--------- 
+       top section
+------------- */
 .top-part{
     background-color: #2D25A0;
 }
@@ -10,6 +24,9 @@ body{
     padding: 42px;
     padding-bottom: 0;   
 }
+/*-------------- 
+         navigation-bar button
+---------------------- */
 .menu-btn a{
     text-decoration: none;
    color: #FFFFFF;
@@ -36,9 +53,18 @@ body{
     height: 438px;
     margin-top: 153px;
 }
+/*--------------- 
+hover for live-section image 
+------------------ */
+.thumbnail-1:hover{
+    width: 650px;
+    transform: scaleX(1.5);
+    transition: 2s;
+}
+/* -----------end of top-section--------- */
 
-/*------------- player list 
-                    --------------------*/
+
+/*------------- player list --------------------*/
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,10 +88,10 @@ body{
     height: 30%;
     width: 100%;
 }
-/* -------
-          all highlights 
-                         -----*/
-.highlights{
+/* ----------------
+         highlights section 
+            ----------------*/
+.highlight-part{
     display: flex;
     margin-left: 182px;
     margin-right: 165px;   
@@ -77,6 +103,16 @@ body{
     margin-right: 69px;
     margin-top: 224px;
 }
+.Thumbnail img{
+    width: 567px;
+    height: 427px;
+    margin-top: 165px;
+}
+/* -----------end of highlight part---------- */
+
+/* ----------------
+      watch-live watch-now login button 
+------------------------*/
 .btn{
     color: #FFFFFF;
     background-color: #E02C6D;
@@ -85,10 +121,12 @@ body{
     padding: 10px 24px;
     font-size: 15px;
 }
-.Thumbnail img{
-    width: 567px;
-    height: 427px;
-    margin-top: 165px;
+/*---------
+ Feature-part
+----------------- */
+.Feature-part h1{
+    margin-left: 10px;
+    color: #E02C6D;
 }
 .Features{
     display: grid;
@@ -106,20 +144,22 @@ body{
     border-radius: 5px; 
 }
 .Feature img{
-    height: 68%;
+    height: 56%;
     width: 100%;
 }
-footer{
+
+.footer-part{
     text-align: center;
     margin: 158px 481.13px 63px 475px;
 }
-footer img{
+.footer-part img{
     width: 483.87px;
     height: 110px;
 }
-.logo{
+/*---------font awsome icon-------- */
+.fab{
     font-size: 25px;
-    padding: 5px;
+    padding: 8px;
     background-color: #969BAB;
     margin-right: 14px;
     border-radius: 45px;
