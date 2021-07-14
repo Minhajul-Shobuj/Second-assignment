@@ -73,6 +73,7 @@ hover for live-section image
     margin-right: 210px;
     }
 .player{
+    font-size: 28px;
     width: 330px;
     height: 474px;
     left: 540px;
@@ -84,8 +85,12 @@ hover for live-section image
     margin-right: 30px;
     border-radius: 5px;
 }
+.player p{
+    font-size: 16px;
+    margin-top: 2px;
+}
 .player img{
-    height: 30%;
+    height: 50%;
     width: 100%;
 }
 /* ----------------
@@ -97,11 +102,15 @@ hover for live-section image
     margin-right: 165px;   
 }
 .discription{
+    font-size: 25px;
     width: 466px;
     height: 309px;
     text-align: center;
     margin-right: 69px;
     margin-top: 224px;
+}
+.discription p{
+    font-size: 16px;
 }
 .Thumbnail img{
     width: 567px;
@@ -149,6 +158,7 @@ hover for live-section image
 }
 
 .footer-part{
+    font-size: 18px;
     text-align: center;
     margin: 158px 481.13px 63px 475px;
 }
@@ -163,5 +173,30 @@ hover for live-section image
     background-color: #969BAB;
     margin-right: 14px;
     border-radius: 45px;
-
 }
+/* -----------
+         media quaries
+ -----------------*/
+
+ /* -----------  for mobile ---------- */
+ @media only screen and (max-width:688px) {
+     .main-part{
+         width: 100%;
+     }
+     .players{
+        grid-template-columns: 1fr;
+     }
+     .highlight-part{
+         display: grid;
+        grid-template-columns: 1fr;   
+     }
+     .Features{
+        grid-template-columns: 1fr;   
+     }
+     .footer-part{
+         width: 50%;
+         display: inline;
+         align-items: center;
+         margin-left: 50%;
+     }
+     }
